@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Md Khorshed Alam | Embodied AI PhD Researcher at AUT</title>
+
+  <meta
+    name="description"
+    content="Md Khorshed Alam is a PhD researcher at Auckland University of Technology working on embodied AI, vision-language-action models, reliable autonomy, causal memory, feasibility prediction, and safe long-horizon planning."
+  >
+
+  <meta
+    name="keywords"
+    content="Md Khorshed Alam, Khorshed Alam, Embodied AI, Vision Language Action Models, VLA, Reliable Autonomous Systems, Auckland University of Technology, AUT, Computer Science Researcher, Geometric Deep Learning"
+  >
+
+  <meta name="author" content="Md Khorshed Alam">
+  <meta name="theme-color" content="#07111f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Md Khorshed Alam | Embodied AI Researcher">
+  <meta
+    property="og:description"
+    content="Building reliable intelligence for embodied AI through constraint-aware planning, feasibility prediction, causal memory, and safety arbitration."
+  >
+  <meta property="og:image" content="portrait.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Md Khorshed Alam | Embodied AI Researcher">
+  <meta
+    name="twitter:description"
+    content="PhD researcher at AUT working on embodied AI and reliable autonomous systems."
+  >
+  <meta name="twitter:image" content="portrait.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md Khorshed Alam",
+    "alternateName": "Khorshed Alam",
+    "jobTitle": "PhD Researcher, Research Assistant and Teaching Assistant",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Auckland University of Technology"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Bangladesh University of Engineering and Technology"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Chittagong University of Engineering and Technology"
+      }
+    ],
+    "knowsAbout": [
+      "Embodied AI",
+      "Vision-Language-Action Models",
+      "Reliable Autonomous Systems",
+      "Long-Horizon Planning",
+      "Causal Memory",
+      "Safety Arbitration",
+      "Geometric Deep Learning",
+      "Protein-Ligand Pose Prediction"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=zZqkMeAAAAAJ",
+      "https://github.com/alam13",
+      "https://www.linkedin.com/in/md-khorshed-alam-b047b7156/"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --background: #050b14;
+      --background-soft: #081321;
+      --surface: rgba(13, 27, 45, 0.76);
+      --surface-solid: #0c1a2b;
+      --surface-light: #11243a;
+      --text: #eaf2fb;
+      --muted: #9eb0c5;
+      --subtle: #6e8299;
+      --cyan: #59e1ff;
+      --cyan-soft: rgba(89, 225, 255, 0.13);
+      --blue: #79a8ff;
+      --violet: #9b8cff;
+      --green: #67e5ae;
+      --border: rgba(150, 190, 230, 0.14);
+      --border-strong: rgba(89, 225, 255, 0.28);
+      --shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --max-width: 1180px;
+      --radius-large: 28px;
+      --radius-medium: 18px;
+      --radius-small: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 15%, rgba(89, 225, 255, 0.09), transparent 28%),
+        radial-gradient(circle at 85% 10%, rgba(155, 140, 255, 0.08), transparent 32%),
+        linear-gradient(180deg, #050b14 0%, #07111f 50%, #050b14 100%);
+      font-family: var(--sans);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.24;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin-inline: auto;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: -100px;
+      left: 16px;
+      z-index: 9999;
+      padding: 12px 16px;
+      color: #03101a;
+      background: var(--cyan);
+      border-radius: 10px;
+      font-weight: 800;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      border-bottom: 1px solid transparent;
+      transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        backdrop-filter 0.3s ease;
+    }
+
+    .site-header.scrolled {
+      background: rgba(5, 11, 20, 0.82);
+      border-color: var(--border);
+      backdrop-filter: blur(20px);
+    }
+
+    .nav-shell {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border-strong);
+      border-radius: 13px;
+      color: var(--cyan);
+      background:
+        linear-gradient(145deg, rgba(89, 225, 255, 0.12), rgba(121, 168, 255, 0.04));
+      box-shadow: inset 0 0 24px rgba(89, 225, 255, 0.06);
+      font-family: var(--serif);
+      font-size: 18px;
+    }
+
+    .brand-text {
+      white-space: nowrap;
+    }
+
+    .brand-text span {
+      color: var(--cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-links a {
+      padding: 9px 11px;
+      border-radius: 10px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 650;
+      transition:
+        color 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.05);
+      outline: none;
+    }
+
+    .nav-links .nav-cv {
+      margin-left: 5px;
+      color: #03111b;
+      background: var(--cyan);
+    }
+
+    .nav-links .nav-cv:hover,
+    .nav-links .nav-cv:focus-visible {
+      color: #03111b;
+      background: #8aebff;
+    }
+
+    .menu-button {
+      width: 44px;
+      height: 44px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      background: var(--surface);
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 150px 0 88px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.72fr);
+      align-items: center;
+      gap: 68px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 20px;
+      color: var(--cyan);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: var(--cyan);
+      box-shadow: 0 0 12px var(--cyan);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-family: var(--serif);
+      font-size: clamp(3.15rem, 7vw, 6.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+      font-weight: 500;
+    }
+
+    h1 .gradient-text {
+      color: transparent;
+      background:
+        linear-gradient(95deg, var(--cyan) 0%, #a5c9ff 48%, #bcaeff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .hero-lead {
+      max-width: 760px;
+      margin-bottom: 18px;
+      color: #c5d4e5;
+      font-size: clamp(1.08rem, 1.8vw, 1.3rem);
+      line-height: 1.75;
+    }
+
+    .hero-role {
+      max-width: 760px;
+      margin-bottom: 30px;
+      color: var(--muted);
+    }
+
+    .hero-role strong {
+      color: var(--text);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      min-height: 49px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 19px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.035);
+      text-decoration: none;
+      font-weight: 760;
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-2px);
+      border-color: var(--border-strong);
+      background: rgba(89, 225, 255, 0.08);
+      outline: none;
+    }
+
+    .button.primary {
+      color: #03111b;
+      background: var(--cyan);
+      border-color: var(--cyan);
+    }
+
+    .button.primary:hover,
+    .button.primary:focus-visible {
+      background: #88ecff;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 9px 17px;
+    }
+
+    .hero-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .hero-links a:hover {
+      color: var(--cyan);
+    }
+
+    .portrait-panel {
+      position: relative;
+      max-width: 420px;
+      justify-self: end;
+    }
+
+    .portrait-panel::before {
+      content: "";
+      position: absolute;
+      inset: -18px;
+      z-index: -1;
+      border: 1px solid rgba(89, 225, 255, 0.14);
+      border-radius: 36px;
+      transform: rotate(3deg);
+    }
+
+    .portrait-panel::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      right: -54px;
+      bottom: -50px;
+      z-index: -2;
+      border-radius: 50%;
+      background: rgba(89, 225, 255, 0.12);
+      filter: blur(42px);
+    }
+
+    .portrait-frame {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(145deg, #11243a, #07111f 72%);
+      box-shadow: var(--shadow);
+    }
+
+    .portrait-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .portrait-fallback {
+      width: 100%;
+      height: 100%;
+      display: none;
+      place-items: center;
+      color: rgba(255, 255, 255, 0.88);
+      background:
+        radial-gradient(circle at 35% 20%, rgba(89, 225, 255, 0.28), transparent 30%),
+        linear-gradient(145deg, #102740, #07111f);
+      font-family: var(--serif);
+      font-size: 7rem;
+      letter-spacing: -0.08em;
+    }
+
+    .portrait-caption {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      padding: 15px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 15px;
+      background: rgba(5, 11, 20, 0.76);
+      backdrop-filter: blur(16px);
+    }
+
+    .portrait-caption strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 0.95rem;
+    }
+
+    .portrait-caption span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      margin-right: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 14px var(--green);
+    }
+
+    .section {
+      padding: 105px 0;
+      position: relative;
+    }
+
+    .section-alt {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.014), rgba(255, 255, 255, 0.005));
+    }
+
+    .section-header {
+      max-width: 790px;
+      margin-bottom: 46px;
+    }
+
+    .section-label {
+      display: block;
+      margin-bottom: 11px;
+      color: var(--cyan);
+      font-size: 0.8rem;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-family: var(--serif);
+      font-size: clamp(2.35rem, 5vw, 4.4rem);
+      line-height: 1.06;
+      letter-spacing: -0.045em;
+      font-weight: 500;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      font-size: 1.07rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+      gap: 52px;
+      align-items: start;
+    }
+
+    .about-copy {
+      color: #c7d5e5;
+      font-size: 1.05rem;
+    }
+
+    .about-copy p {
+      margin-bottom: 19px;
+    }
+
+    .fact-panel {
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .fact-row {
+      padding: 17px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .fact-row:first-child {
+      padding-top: 0;
+    }
+
+    .fact-row:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .fact-row span {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--subtle);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    .fact-row strong {
+      font-size: 0.97rem;
+      line-height: 1.5;
+    }
+
+    .research-vision {
+      padding: 34px;
+      margin-bottom: 34px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(140deg, rgba(89, 225, 255, 0.09), rgba(121, 168, 255, 0.025)),
+        var(--surface);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .research-vision::after {
+      content: "CRL";
+      position: absolute;
+      right: -10px;
+      bottom: -47px;
+      color: rgba(89, 225, 255, 0.045);
+      font-family: var(--serif);
+      font-size: 11rem;
+      line-height: 1;
+    }
+
+    .research-vision h3 {
+      margin-bottom: 13px;
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .research-vision p {
+      max-width: 890px;
+      margin-bottom: 0;
+      color: #bfd0e2;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+      background: var(--surface);
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-strong);
+      background: rgba(14, 31, 51, 0.92);
+    }
+
+    .card-number {
+      display: inline-flex;
+      width: 38px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      border: 1px solid var(--border-strong);
+      border-radius: 11px;
+      color: var(--cyan);
+      background: var(--cyan-soft);
+      font-size: 0.77rem;
+      font-weight: 900;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.03rem;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .supervisor-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .person-card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+      background: rgba(255, 255, 255, 0.022);
+    }
+
+    .person-card .role {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--cyan);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .person-card h3 {
+      margin-bottom: 7px;
+      font-size: 1rem;
+    }
+
+    .person-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .publication-list,
+    .project-list,
+    .news-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .publication {
+      display: grid;
+      grid-template-columns: 90px minmax(0, 1fr);
+      gap: 24px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+      background: var(--surface);
+      transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .publication:hover {
+      transform: translateX(3px);
+      border-color: var(--border-strong);
+    }
+
+    .publication-year {
+      color: var(--cyan);
+      font-family: var(--serif);
+      font-size: 1.65rem;
+      line-height: 1;
+    }
+
+    .publication-type {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--subtle);
+      font-size: 0.68rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .publication h3 {
+      margin-bottom: 8px;
+      font-size: 1.03rem;
+      line-height: 1.5;
+    }
+
+    .publication-authors,
+    .publication-venue {
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .publication-venue {
+      color: #aec1d6;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 13px;
+    }
+
+    .tag {
+      padding: 5px 9px;
+      border: 1px solid rgba(89, 225, 255, 0.18);
+      border-radius: 999px;
+      color: #bceefa;
+      background: rgba(89, 225, 255, 0.06);
+      font-size: 0.72rem;
+      font-weight: 750;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 56px minmax(0, 1fr);
+      gap: 19px;
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+      background: var(--surface);
+    }
+
+    .project-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border-strong);
+      border-radius: 15px;
+      color: var(--cyan);
+      background: var(--cyan-soft);
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+    .project-meta {
+      margin-bottom: 7px;
+      color: var(--cyan);
+      font-size: 0.73rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .project-card h3 {
+      margin-bottom: 9px;
+      font-family: var(--serif);
+      font-size: 1.42rem;
+      font-weight: 500;
+    }
+
+    .project-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      bottom: 7px;
+      left: 4px;
+      width: 1px;
+      background:
+        linear-gradient(to bottom, var(--cyan), rgba(89, 225, 255, 0.05));
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 32px 24px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -24px;
+      width: 9px;
+      height: 9px;
+      border: 2px solid var(--background);
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 13px rgba(89, 225, 255, 0.7);
+    }
+
+    .timeline-date {
+      margin-bottom: 6px;
+      color: var(--cyan);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 5px;
+      font-size: 1.05rem;
+    }
+
+    .timeline-item h4 {
+      margin: 0 0 8px;
+      color: #a9bcd1;
+      font-size: 0.91rem;
+      font-weight: 650;
+    }
+
+    .timeline-item p,
+    .timeline-item li {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .timeline-item ul {
+      padding-left: 18px;
+      margin: 8px 0 0;
+    }
+
+    .skill-groups {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .skill-group {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+      background: var(--surface);
+    }
+
+    .skill-group h3 {
+      margin-bottom: 14px;
+      color: var(--cyan);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .skill-group p {
+      margin-bottom: 0;
+      color: #c0d0e1;
+    }
+
+    .news-item {
+      display: grid;
+      grid-template-columns: 130px minmax(0, 1fr);
+      gap: 22px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .news-item:first-child {
+      padding-top: 0;
+    }
+
+    .news-date {
+      color: var(--cyan);
+      font-size: 0.8rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .news-item h3 {
+      margin-bottom: 7px;
+      font-size: 1.04rem;
+    }
+
+    .news-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .contact-panel {
+      padding: clamp(28px, 6vw, 62px);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-large);
+      background:
+        radial-gradient(circle at 90% 10%, rgba(155, 140, 255, 0.15), transparent 32%),
+        radial-gradient(circle at 15% 85%, rgba(89, 225, 255, 0.12), transparent 34%),
+        var(--surface);
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-panel h2 {
+      max-width: 800px;
+      margin-inline: auto;
+    }
+
+    .contact-panel p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    footer {
+      padding: 35px 0 42px;
+      color: var(--subtle);
+      font-size: 0.84rem;
+    }
+
+    .footer-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-grid a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .footer-grid a:hover {
+      color: var(--cyan);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .menu-button {
+        display: inline-flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 74px;
+        left: 20px;
+        right: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: rgba(5, 11, 20, 0.96);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 12px 14px;
+      }
+
+      .nav-links .nav-cv {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 54px;
+      }
+
+      .portrait-panel {
+        width: min(100%, 410px);
+        justify-self: start;
+      }
+
+      .about-grid,
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .card-grid,
+      .supervisor-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        width: min(calc(100% - 28px), var(--max-width));
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 125px;
+      }
+
+      h1 {
+        font-size: clamp(3rem, 15vw, 4.6rem);
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .card-grid,
+      .supervisor-grid,
+      .skill-groups {
+        grid-template-columns: 1fr;
+      }
+
+      .publication {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+
+      .news-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      .footer-grid {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="Khorshed Alam homepage">
+        <span class="brand-mark">KA</span>
+        <span class="brand-text">Khorshed <span>Alam</span></span>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navigation" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cv" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Embodied AI · Reliable Autonomy · Geometric Learning</span>
+
+          <h1>
+            Building reliable intelligence for
+            <span class="gradient-text">embodied AI.</span>
+          </h1>
+
+          <p class="hero-lead">
+            I am Md Khorshed Alam, a PhD researcher exploring how embodied
+            agents can plan, remember, predict feasibility, and act safely
+            in uncertain physical environments.
+          </p>
+
+          <p class="hero-role">
+            <strong>PhD Student, Research Assistant and Teaching Assistant</strong><br>
+            Department of Computer and Information Sciences,
+            Auckland University of Technology, New Zealand.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#research">Explore my research</a>
+            <a class="button" href="#publications">View publications</a>
+            <a class="button" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+
+          <div class="hero-links" aria-label="Academic profiles">
+            <a
+              href="https://scholar.google.com/citations?user=zZqkMeAAAAAJ"
+              target="_blank"
+              rel="noopener"
+            >
+              Google Scholar ↗
+            </a>
+
+            <a
+              href="https://github.com/alam13"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub ↗
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/md-khorshed-alam-b047b7156/"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a href="mailto:khorshedalamcse@gmail.com">Email ↗</a>
+          </div>
+        </div>
+
+        <aside class="portrait-panel reveal" aria-label="Professional portrait">
+          <div class="portrait-frame">
+            <img
+              id="portraitImage"
+              src="portrait.jpg"
+              alt="Professional portrait of Md Khorshed Alam"
+              onerror="showPortraitFallback()"
+            >
+
+            <div
+              class="portrait-fallback"
+              id="portraitFallback"
+              aria-label="Portrait placeholder"
+            >
+              KA
+            </div>
+
+            <div class="portrait-caption">
+              <strong>
+                <span class="status-dot"></span>
+                Currently at AUT
+              </strong>
+              <span>Auckland, New Zealand · PhD Researcher · RA · TA</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">About</span>
+          <h2>Research with a reliability-first perspective.</h2>
+          <p class="section-intro">
+            My work connects embodied artificial intelligence, geometric deep
+            learning, safety-aware decision systems, and university teaching.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I am a computer science researcher and university educator with
+              research experience spanning embodied AI, vision-language-action
+              models, geometric deep learning, protein–ligand pose prediction,
+              explainable federated learning, and reliable autonomous systems.
+            </p>
+
+            <p>
+              My doctoral research at Auckland University of Technology focuses
+              on reliability-centred decision-making for embodied agents. The
+              central question is not only whether an AI model can propose a
+              plausible action, but whether the surrounding system can ground
+              that action in physical constraints, predict its feasibility,
+              recall causally relevant failures, and arbitrate safety before
+              execution.
+            </p>
+
+            <p>
+              Before beginning my doctoral research, I completed a thesis-based
+              M.Sc. in Computer Science and Engineering at Bangladesh University
+              of Engineering and Technology. My master's work developed
+              transformation-invariant and geometric deep-learning methods for
+              protein–ligand pose correction and iterative refinement.
+            </p>
+
+            <p>
+              Alongside research, I have more than five years of university
+              teaching experience and have contributed to outcome-based
+              education, curriculum development, academic quality assurance,
+              student mentoring, research preparation, and programming
+              activities.
+            </p>
+          </div>
+
+          <aside class="fact-panel reveal">
+            <div class="fact-row">
+              <span>Current institution</span>
+              <strong>Auckland University of Technology</strong>
+            </div>
+
+            <div class="fact-row">
+              <span>Department</span>
+              <strong>Computer and Information Sciences</strong>
+            </div>
+
+            <div class="fact-row">
+              <span>Current roles</span>
+              <strong>PhD Student · Research Assistant · Teaching Assistant</strong>
+            </div>
+
+            <div class="fact-row">
+              <span>Primary supervisor</span>
+              <strong>Dr. Trung Nguyen</strong>
+            </div>
+
+            <div class="fact-row">
+              <span>Research direction</span>
+              <strong>Reliable embodied AI and autonomous decision-making</strong>
+            </div>
+
+            <div class="fact-row">
+              <span>Nationality</span>
+              <strong>Bangladeshi</strong>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Research</span>
+          <h2>Toward cognitive architectures for reliable autonomy.</h2>
+          <p class="section-intro">
+            I study how autonomous agents can make dependable decisions across
+            long horizons, especially when actions must remain physically
+            feasible, causally informed, and safe.
+          </p>
+        </div>
+
+        <article class="research-vision reveal">
+          <h3>
+            Toward Cognitive Architectures for Reliable Long-Horizon Planning
+            in LLM-Based Embodied Agents
+          </h3>
+
+          <p>
+            My doctoral work proposes a Cognitive Reliability Loop: a modular
+            decision layer combining constraint-aware planning, feasibility
+            prediction, causal memory, and safety arbitration around a
+            vision-language-action policy. The research is designed for initial
+            evaluation using OpenVLA and the LIBERO simulation benchmark, with
+            staged progression toward Unitree G1 humanoid deployment.
+          </p>
+        </article>
+
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="card-number">01</span>
+            <h3>Embodied AI</h3>
+            <p>
+              Intelligent agents that perceive, reason, and act within physical
+              or simulated environments.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-number">02</span>
+            <h3>Vision-Language-Action Models</h3>
+            <p>
+              Multimodal policies connecting visual perception, natural
+              language instructions, and executable actions.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-number">03</span>
+            <h3>Long-Horizon Planning</h3>
+            <p>
+              Decision-making across extended tasks where uncertainty and
+              accumulated errors affect future outcomes.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-number">04</span>
+            <h3>Feasibility Prediction</h3>
+            <p>
+              Predicting whether a proposed action is physically achievable
+              before an embodied system attempts execution.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-number">05</span>
+            <h3>Causal Memory</h3>
+            <p>
+              Retrieving prior failures and their causes to improve future
+              planning and prevent repeated mistakes.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-number">06</span>
+            <h3>Safety Arbitration</h3>
+            <p>
+              A final reliability layer that evaluates risk, constraints, and
+              consequences before an action is executed.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-number">07</span>
+            <h3>Geometric Deep Learning</h3>
+            <p>
+              Learning from graph-structured and three-dimensional data while
+              respecting important geometric properties.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-number">08</span>
+            <h3>Protein–Ligand Modelling</h3>
+            <p>
+              Transformation-aware pose prediction and iterative correction for
+              computational drug-discovery pipelines.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-number">09</span>
+            <h3>Explainable AI</h3>
+            <p>
+              Developing systems whose predictions and decisions can be
+              interpreted, investigated, and trusted.
+            </p>
+          </article>
+        </div>
+
+        <div class="section-header reveal" style="margin-top: 72px; margin-bottom: 26px;">
+          <span class="section-label">Supervisory team</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3.2rem);">Research guidance across AI and autonomy.</h2>
+        </div>
+
+        <div class="supervisor-grid">
+          <article class="person-card reveal">
+            <span class="role">Primary Supervisor</span>
+            <h3>Dr. Trung Nguyen</h3>
+            <p>
+              Lecturer, Department of Computer and Information Sciences,
+              Auckland University of Technology.
+            </p>
+          </article>
+
+          <article class="person-card reveal">
+            <span class="role">Co-Supervisor</span>
+            <h3>Dr. Abubakar Siddique</h3>
+            <p>
+              Lecturer, Department of Electrical and Electronic Engineering,
+              Auckland University of Technology. Research includes explainable
+              AI, evolutionary computing, and cognitive architectures.
+            </p>
+          </article>
+
+          <article class="person-card reveal">
+            <span class="role">International Co-Supervisor</span>
+            <h3>Dr. M. A. Hakim Newton</h3>
+            <p>
+              Senior Lecturer in Data Science, University of Newcastle,
+              Australia. Research includes artificial intelligence, intelligent
+              search, and optimization.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="publications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Publications</span>
+          <h2>Selected peer-reviewed and ongoing research.</h2>
+          <p class="section-intro">
+            Work across explainable federated learning, software security,
+            communication networks, geometric learning, and protein–ligand pose
+            refinement.
+          </p>
+        </div>
+
+        <div class="publication-list" id="publicationList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Projects</span>
+          <h2>Current and previous research projects.</h2>
+          <p class="section-intro">
+            These projects reflect a continuing interest in dependable machine
+            intelligence, structured learning, and reproducible computational
+            research.
+          </p>
+        </div>
+
+        <div class="project-list" id="projectList"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Experience</span>
+          <h2>Research, teaching, and academic leadership.</h2>
+        </div>
+
+        <div class="two-column">
+          <div>
+            <div class="timeline reveal">
+              <article class="timeline-item">
+                <div class="timeline-date">Current</div>
+                <h3>PhD Student, Research Assistant and Teaching Assistant</h3>
+                <h4>Auckland University of Technology · New Zealand</h4>
+                <p>
+                  Conducting doctoral research in reliable embodied AI under
+                  Dr. Trung Nguyen in the Department of Computer and
+                  Information Sciences.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2024–Present</div>
+                <h3>Lecturer, Department of CSE</h3>
+                <h4>Notre Dame University Bangladesh</h4>
+                <ul>
+                  <li>
+                    Taught undergraduate computer science courses, including
+                    Artificial Intelligence.
+                  </li>
+                  <li>
+                    Mentored students in programming and research preparation.
+                  </li>
+                  <li>
+                    Contributed to OBE curriculum development, accreditation
+                    documentation, and academic quality assurance.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2023–Present</div>
+                <h3>Master’s Thesis Researcher</h3>
+                <h4>Bangladesh University of Engineering and Technology</h4>
+                <ul>
+                  <li>
+                    Designed transformation-invariant geometric deep-learning
+                    pipelines for protein–ligand pose correction.
+                  </li>
+                  <li>
+                    Developed iterative reliability-focused refinement models.
+                  </li>
+                  <li>
+                    Built reproducible training and evaluation workflows using
+                    Python and PyTorch.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2021–2023</div>
+                <h3>Research Assistant</h3>
+                <h4>Bangladesh University of Engineering and Technology</h4>
+                <ul>
+                  <li>
+                    Investigated machine-learning approaches for protein–ligand
+                    docking and structural representations.
+                  </li>
+                  <li>
+                    Analysed CPython garbage collection.
+                  </li>
+                  <li>
+                    Accelerated a Conjugate Gradient Method implementation.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2019–2023</div>
+                <h3>Lecturer, Department of CSE</h3>
+                <h4>City University and State University of Bangladesh</h4>
+                <ul>
+                  <li>Taught core computer science and engineering courses.</li>
+                  <li>
+                    Contributed to OBE-based syllabus development and
+                    research-methodology seminars.
+                  </li>
+                  <li>
+                    Supported programming contests and departmental activities.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-header reveal" style="margin-bottom: 25px;">
+              <span class="section-label">Education</span>
+            </div>
+
+            <div class="timeline reveal">
+              <article class="timeline-item">
+                <div class="timeline-date">Current</div>
+                <h3>PhD in Computer and Information Sciences</h3>
+                <h4>Auckland University of Technology</h4>
+                <p>
+                  Research focus: cognitive architectures and reliability
+                  mechanisms for long-horizon planning in embodied agents.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2021–2025</div>
+                <h3>M.Sc. in Computer Science and Engineering</h3>
+                <h4>
+                  Bangladesh University of Engineering and Technology ·
+                  CGPA 3.25/4.00
+                </h4>
+                <p>
+                  Thesis: Enhancing Protein–Ligand Pose Prediction via Deep
+                  Learning with Transformation-Invariant Loss Function and
+                  Iterative Refinement.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2014–2018</div>
+                <h3>B.Sc. in Computer Science and Engineering</h3>
+                <h4>
+                  Chittagong University of Engineering and Technology ·
+                  CGPA 3.48/4.00
+                </h4>
+              </article>
+            </div>
+
+            <div class="section-header reveal" style="margin: 62px 0 25px;">
+              <span class="section-label">Awards and service</span>
+            </div>
+
+            <div class="timeline reveal">
+              <article class="timeline-item">
+                <div class="timeline-date">2021–2023</div>
+                <h3>ICT Research Fellowship</h3>
+                <h4>Government of Bangladesh</h4>
+                <p>
+                  Competitive national research award supporting M.Sc. research
+                  on deep-learning-based protein–ligand docking and pose
+                  refinement.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">Academic Merit</div>
+                <h3>Government Talent Scholarships</h3>
+                <h4>Bangladesh</h4>
+                <p>
+                  Awarded in Year 5, Year 8, and Higher Secondary based on
+                  nationwide academic merit.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">2026</div>
+                <h3>Convener, NDUB CSE Fest</h3>
+                <h4>Notre Dame University Bangladesh</h4>
+                <p>
+                  Coordinated a three-day national event involving 86 teams
+                  representing more than 61 universities.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-date">Leadership</div>
+                <h3>President, Nobojagoron Torun Songho</h3>
+                <p>
+                  Led educational, library-development, environmental,
+                  flood-relief, and youth-development initiatives.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top: 90px;">
+          <span class="section-label">Technical profile</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3.2rem);">Tools for research and development.</h2>
+        </div>
+
+        <div class="skill-groups">
+          <article class="skill-group reveal">
+            <h3>Programming and machine learning</h3>
+            <p>
+              Python, C, C++, Java, MATLAB, PyTorch, TensorFlow, Keras,
+              Scikit-learn, Pandas, and NumPy.
+            </p>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Scientific computing</h3>
+            <p>
+              RDKit, Open Babel, PyMOL, AutoDock Tools, geometric modelling,
+              graph learning, and molecular-data processing.
+            </p>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Research workflow</h3>
+            <p>
+              Git, LaTeX, Linux, Jupyter, remote GPU servers, reproducible
+              experiments, evaluation pipelines, and academic writing.
+            </p>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Academic development</h3>
+            <p>
+              Outcome-Based Education, curriculum development, accreditation
+              documentation, research mentoring, and machine learning for drug
+              discovery.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">News</span>
+          <h2>Research and academic updates.</h2>
+          <p class="section-intro">
+            This section is designed for quick updates on publications,
+            milestones, projects, teaching, talks, and collaborations.
+          </p>
+        </div>
+
+        <div class="news-list reveal" id="newsList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <span class="section-label">Contact</span>
+
+          <h2>Let’s discuss reliable intelligence and embodied AI.</h2>
+
+          <p>
+            I welcome conversations with researchers, academic collaborators,
+            research laboratories, and industry teams working on embodied AI,
+            multimodal learning, reliable autonomy, geometric deep learning,
+            and intelligent decision systems.
+          </p>
+
+          <div class="contact-actions">
+            <a
+              class="button primary"
+              href="mailto:khorshedalamcse@gmail.com"
+            >
+              Email me
+            </a>
+
+            <a
+              class="button"
+              href="https://scholar.google.com/citations?user=zZqkMeAAAAAJ"
+              target="_blank"
+              rel="noopener"
+            >
+              Google Scholar
+            </a>
+
+            <a
+              class="button"
+              href="https://github.com/alam13"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub
+            </a>
+
+            <a
+              class="button"
+              href="https://www.linkedin.com/in/md-khorshed-alam-b047b7156/"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        © <span id="currentYear"></span> Md Khorshed Alam.
+        Built for academic research and collaboration.
+      </div>
+
+      <div>
+        Last updated August 2026 ·
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /*
+    ============================================================
+    EDITABLE CONTENT
+    ============================================================
+
+    To add a publication, project, or news item:
+    1. Copy one existing object.
+    2. Paste it into the relevant list.
+    3. Change its text.
+    4. Keep commas between objects.
+
+    You do not need to change the HTML layout.
+    */
+
+    const publications = [
+      {
+        year: "2026",
+        type: "Journal Article",
+        title:
+          "FLEX-IDS: A Secure and Explainable Federated Intrusion Detection Framework for Edge-of-Things Environments under Adversarial Conditions",
+        authors:
+          "A. P. Chowdhury, F. N. Nur, A. H. M. S. Islam, K. Alam, A. Karim, and M. A. Shah",
+        venue:
+          "Computers & Electrical Engineering, 129(B), 110827. SCImago Q1.",
+        tags: ["Federated Learning", "Explainable AI", "Intrusion Detection"]
+      },
+      {
+        year: "2026",
+        type: "Under Review",
+        title:
+          "Thesis-Derived Study on Protein–Ligand Pose Prediction and Iterative Geometric Refinement",
+        authors: "Md Khorshed Alam and collaborators",
+        venue:
+          "Submitted to Applied Intelligence; under second-round review.",
+        tags: ["Protein–Ligand Docking", "Geometric Learning", "Pose Refinement"]
+      },
+      {
+        year: "2026",
+        type: "Under Review",
+        title:
+          "GeoProNet: Geometric Graph Transformer for Protein–Ligand Pose Refinement with Torsion-Informed Learning",
+        authors: "Md Khorshed Alam and collaborators",
+        venue:
+          "Submitted to Applied Intelligence; under first-round review.",
+        tags: ["Graph Transformer", "Torsion Learning", "Drug Discovery"]
+      },
+      {
+        year: "2026",
+        type: "Under Review",
+        title:
+          "GeoProNetUp: SE(3)-Equivariant Geometric Graph Refinement for Reliable Protein–Ligand Pose Correction in Medical Informatics Pipelines",
+        authors: "Md Khorshed Alam and collaborators",
+        venue:
+          "Submitted to Applied Intelligence; under first-round review.",
+        tags: ["SE(3) Equivariance", "Geometric Graphs", "Medical Informatics"]
+      },
+      {
+        year: "2023",
+        type: "Conference Paper",
+        title:
+          "Secrecy Rate Optimization for Energy Efficient Cognitive Relay Networks",
+        authors: "M. K. Alam and T. Saha",
+        venue:
+          "Innovations in Computer Science and Engineering, Lecture Notes in Networks and Systems, Vol. 565, Springer.",
+        tags: ["Network Security", "Optimization", "Cognitive Networks"]
+      },
+      {
+        year: "2023",
+        type: "Conference Paper",
+        title:
+          "Comparison Between Property-Based Software Security Testing Technique and Fault Injection",
+        authors: "T. Saha and M. K. Alam",
+        venue:
+          "Innovations in Computer Science and Engineering, Lecture Notes in Networks and Systems, Vol. 565, Springer.",
+        tags: ["Software Security", "Testing", "Fault Injection"]
+      }
+    ];
+
+    const projects = [
+      {
+        icon: "AI",
+        status: "Current Doctoral Research",
+        title: "Cognitive Reliability Loop for Embodied Agents",
+        description:
+          "A modular reliability layer for vision-language-action agents, combining constraint-aware planning, feasibility prediction, causal memory, and safety arbitration. Initial evaluation is planned using OpenVLA and LIBERO, with staged progression toward Unitree G1 humanoid deployment."
+      },
+      {
+        icon: "G3",
+        status: "Geometric Deep Learning",
+        title: "GeoProNet and GeoProNetUp",
+        description:
+          "Geometric graph-learning approaches for protein–ligand pose refinement, including torsion-informed learning and SE(3)-equivariant correction mechanisms for reliable molecular modelling."
+      },
+      {
+        icon: "KR",
+        status: "Master’s Research",
+        title: "Transformation-Invariant Protein–Ligand Pose Refinement",
+        description:
+          "A deep-learning pipeline using transformation-invariant loss functions and iterative refinement to improve protein–ligand pose prediction. The work produced reproducible Python and PyTorch workflows and multiple journal manuscripts."
+      },
+      {
+        icon: "FL",
+        status: "Published Research",
+        title: "Explainable Federated Intrusion Detection",
+        description:
+          "Research on secure and explainable federated intrusion detection for edge-of-things environments operating under adversarial conditions."
+      }
+    ];
+
+    const news = [
+      {
+        date: "2026",
+        title: "Beginning doctoral research at AUT",
+        description:
+          "Started PhD research in the Department of Computer and Information Sciences at Auckland University of Technology, while contributing as a Research Assistant and Teaching Assistant under Dr. Trung Nguyen."
+      },
+      {
+        date: "2026",
+        title: "FLEX-IDS published in Computers & Electrical Engineering",
+        description:
+          "The work on secure and explainable federated intrusion detection for adversarial edge-of-things environments was published in a SCImago Q1 journal."
+      },
+      {
+        date: "2026",
+        title: "Three thesis-derived journal manuscripts under review",
+        description:
+          "Research on transformation-invariant, torsion-informed, and SE(3)-equivariant protein–ligand pose refinement is progressing through journal peer review."
+      },
+      {
+        date: "2026",
+        title: "Convened a national university CSE festival",
+        description:
+          "Coordinated the three-day NDUB CSE Fest, involving 86 teams from more than 61 universities."
+      },
+      {
+        date: "2025",
+        title: "Invited speaker and programming mentor",
+        description:
+          "Contributed to departmental research and programming activities, including a seminar talk and the development of competitive-programming coaching."
+      }
+    ];
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function renderPublications() {
+      const container = document.getElementById("publicationList");
+
+      container.innerHTML = publications
+        .map((publication) => {
+          const tags = publication.tags
+            .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
+            .join("");
+
+          return `
+            <article class="publication reveal">
+              <div>
+                <div class="publication-year">${escapeHtml(publication.year)}</div>
+                <span class="publication-type">${escapeHtml(publication.type)}</span>
+              </div>
+
+              <div>
+                <h3>${escapeHtml(publication.title)}</h3>
+                <p class="publication-authors">${escapeHtml(publication.authors)}</p>
+                <p class="publication-venue">${escapeHtml(publication.venue)}</p>
+                <div class="tag-row">${tags}</div>
+              </div>
+            </article>
+          `;
+        })
+        .join("");
+    }
+
+    function renderProjects() {
+      const container = document.getElementById("projectList");
+
+      container.innerHTML = projects
+        .map(
+          (project) => `
+            <article class="project-card reveal">
+              <div class="project-icon">${escapeHtml(project.icon)}</div>
+
+              <div>
+                <div class="project-meta">${escapeHtml(project.status)}</div>
+                <h3>${escapeHtml(project.title)}</h3>
+                <p>${escapeHtml(project.description)}</p>
+              </div>
+            </article>
+          `
+        )
+        .join("");
+    }
+
+    function renderNews() {
+      const container = document.getElementById("newsList");
+
+      container.innerHTML = news
+        .map(
+          (item) => `
+            <article class="news-item">
+              <div class="news-date">${escapeHtml(item.date)}</div>
+
+              <div>
+                <h3>${escapeHtml(item.title)}</h3>
+                <p>${escapeHtml(item.description)}</p>
+              </div>
+            </article>
+          `
+        )
+        .join("");
+    }
+
+    function showPortraitFallback() {
+      const image = document.getElementById("portraitImage");
+      const fallback = document.getElementById("portraitFallback");
+
+      image.style.display = "none";
+      fallback.style.display = "grid";
+    }
+
+    function initializeNavigation() {
+      const button = document.getElementById("menuButton");
+      const navigation = document.getElementById("navigation");
+
+      button.addEventListener("click", () => {
+        const isOpen = navigation.classList.toggle("open");
+        button.setAttribute("aria-expanded", String(isOpen));
+        button.textContent = isOpen ? "✕" : "☰";
+      });
+
+      navigation.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navigation.classList.remove("open");
+          button.setAttribute("aria-expanded", "false");
+          button.textContent = "☰";
+        });
+      });
+    }
+
+    function initializeHeader() {
+      const header = document.getElementById("siteHeader");
+
+      function updateHeader() {
+        header.classList.toggle("scrolled", window.scrollY > 30);
+      }
+
+      updateHeader();
+      window.addEventListener("scroll", updateHeader, { passive: true });
+    }
+
+    function initializeRevealAnimations() {
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        document.querySelectorAll(".reveal").forEach((element) => {
+          element.classList.add("visible");
+        });
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.11,
+          rootMargin: "0px 0px -40px 0px"
+        }
+      );
+
+      document.querySelectorAll(".reveal").forEach((element) => {
+        observer.observe(element);
+      });
+    }
+
+    function initializeWebsite() {
+      renderPublications();
+      renderProjects();
+      renderNews();
+
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      initializeNavigation();
+      initializeHeader();
+
+      window.requestAnimationFrame(initializeRevealAnimations);
+    }
+
+    initializeWebsite();
+  </script>
+</body>
+</html>

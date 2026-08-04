@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-labelledby="title description">
+  <title id="title">MKA Academic Monogram Logo</title>
+  <desc id="description">
+    Elegant, clear, and eye-catching academic logo for Md Khorshed Alam.
+  </desc>
+
+  <defs>
+    <linearGradient id="bgGradient" x1="140" y1="120" x2="860" y2="900">
+      <stop offset="0%" stop-color="#0F172A"></stop>
+      <stop offset="55%" stop-color="#102A43"></stop>
+      <stop offset="100%" stop-color="#0B1324"></stop>
+    </linearGradient>
+
+    <linearGradient id="accentGradient" x1="260" y1="260" x2="760" y2="760">
+      <stop offset="0%" stop-color="#22D3EE"></stop>
+      <stop offset="100%" stop-color="#3B82F6"></stop>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#020617" flood-opacity="0.28"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Badge -->
+  <rect x="100" y="100" width="800" height="800" rx="200" fill="url(#bgGradient)" filter="url(#shadow)"></rect>
+
+  <!-- Fine border -->
+  <rect x="126" y="126" width="748" height="748" rx="178" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="4"></rect>
+
+  <!-- Subtle accent curve -->
+  <path d="M235 710 C355 815, 640 835, 770 690" fill="none" stroke="url(#accentGradient)" stroke-width="16" stroke-linecap="round"></path>
+  <circle cx="235" cy="710" r="12" fill="#22D3EE"></circle>
+  <circle cx="770" cy="690" r="12" fill="#3B82F6"></circle>
+
+  <!-- Main monogram -->
+  <text x="500" y="470" text-anchor="middle" font-family="Inter, Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="260" font-weight="800" letter-spacing="-20" fill="#FFFFFF">
+    MKA
+  </text>
+
+  <!-- Accent line -->
+  <rect x="360" y="510" width="280" height="8" rx="4" fill="url(#accentGradient)"></rect>
+
+  <!-- Full name -->
+  <text x="500" y="610" text-anchor="middle" font-family="Inter, Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="0.5" fill="#F8FAFC">
+    Md Khorshed Alam
+  </text>
+
+  <!-- Role / field -->
+  <text x="500" y="660" text-anchor="middle" font-family="Inter, Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="25" font-weight="500" letter-spacing="2" fill="#CBD5E1">
+    PhD Student • Computer &amp; Information Sciences
+  </text>
+</svg>
